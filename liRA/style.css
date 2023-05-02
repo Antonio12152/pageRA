@@ -1,0 +1,24 @@
+body{
+    background-color: darkgray;
+}
+p {
+    font-size: 50px;
+    border-image-outset: 30px;
+    border: 50px;
+    width: 50%;
+}
+
+ul,ol,dl {
+    font-size: 24px;
+    margin: 100px;
+    color: aqua;
+}
+
+ul li {
+    padding-left: 10px;
+}
+
+ul li::marker {
+    color: lime;
+    font-size: 1.5em;
+}

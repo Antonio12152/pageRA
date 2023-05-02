@@ -1,0 +1,31 @@
+* {
+    font-family: 'Times', serif;
+}
+
+h1,
+h2 {
+    border-bottom: 1px solid #a2a9b1;
+}
+.mw-logo {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    min-width: 13.875em;
+}
+.mw-logo-container{
+    max-width: 200px;
+}
+img {
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+    color: #3366cc;
+    background: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+figure,figure>img{
+    width: 400px;
+}   
