@@ -35,6 +35,10 @@
             <h2>main</h2>
             <iframe src="https://www.youtube.com/embed/qwxZU0VkWII" frameborder="0"></iframe>
             <iframe src="https://en.wikipedia.org/wiki/GitHub" frameborder="0"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.83675614986!2d30.367886082038492!3d50.40213793561955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sde!4v1683642867895!5m2!1sru!2sde"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             <article>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus rem et laborum dicta, deserunt
                 porro
@@ -65,8 +69,10 @@
                 quia, ratione sunt explicabo vel repudiandae? Assumenda maxime beatae corrupti odio temporibus aperiam,
                 consequatur eaque.
             </article>
-            <video width="500px"controls="controls">
-                <source  src="./videocat.mp4" type="video/mp4">
+            <canvas id="myCanvas" width="578" height="200"></canvas>
+            <br>
+            <video width="500px" controls="controls">
+                <source src="./videocat.mp4" type="video/mp4">
             </video>
             <br>
             <audio src="./audiocat.mp3" type="audio/mp3" controls></audio>
@@ -108,6 +114,21 @@
         <a href="#" target="_blank" class="fa fa-reddit"></a>
         <a href="#" target="_blank" class="fa fa-rss"></a>
     </footer>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const context = canvas.getContext('2d');
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+        const radius = 70;
+
+        context.beginPath();
+        context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+        context.fillStyle = 'lightgreen';
+        context.fill();
+        context.lineWidth = 5;
+        context.strokeStyle = '#003333';
+        context.stroke();
+    </script>
 </body>
 
 </html>
